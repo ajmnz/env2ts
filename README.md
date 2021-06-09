@@ -13,13 +13,13 @@ It can be easily used with npx.
 $ npx env2ts
 ```
 
-This will look for a `.env` file in your current directory and will write to `config.ts`.
+This will look for an `.env` file in your current directory and will write to `config.ts`.
 
 ## Options
 
 | arg                     | required | description                              | default       |
 | ----------------------- | -------- | ---------------------------------------- | ------------- |
-| `--in path/to/.env`     | no       | Specify a `.env` file                    | `./.env`      |
+| `--in path/to/.env`     | no       | Specify an `.env` file                   | `./.env`      |
 | `--out path/to/file.ts` | no       | Specify the output file                  | `./config.ts` |
 | `--raw`                 | no       | Print the output directly to the console | `false`       |
 
