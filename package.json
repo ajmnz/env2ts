@@ -32,7 +32,8 @@
   "scripts": {
     "postinstall": "husky install",
     "watch": "tsc -w",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "build": "tsc"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
