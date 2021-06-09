@@ -42,7 +42,7 @@ import prompts from "prompts";
           value: "yarn",
         },
         {
-          title: "Don't install",
+          title: "Do not install",
           value: "none",
         },
       ],
