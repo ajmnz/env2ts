@@ -1581,13 +1581,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:^10.0.0":
-  version: 10.0.0
-  resolution: "dotenv@npm:10.0.0"
-  checksum: 9c45712e213de63bdb646b8e5344749b7566e25a67bbd3f03711d54e40eff10066c1f23eff0081d0949fda7c8efcc6e9e8bf18d0f023a8274f55f5d5f97bb6db
-  languageName: node
-  linkType: hard
-
 "duplexer2@npm:~0.1.0":
   version: 0.1.4
   resolution: "duplexer2@npm:0.1.4"
@@ -1669,13 +1662,11 @@ __metadata:
     "@typescript-eslint/parser": latest
     chalk: ^4.1.1
     cross-spawn: ^7.0.3
-    dotenv: ^10.0.0
     eslint: ^7.28.0
     husky: ">=6"
     lint-staged: ">=10"
     prettier: ^2.3.1
     prompts: ^2.4.1
-    rimraf: ^3.0.2
     semantic-release: ^17.4.3
     typescript: ^4.3.2
   bin:
