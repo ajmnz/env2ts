@@ -1658,6 +1658,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"env2ts@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "env2ts@workspace:."
+  dependencies:
+    "@types/cross-spawn": ^6.0.2
+    "@types/node": ^15.12.1
+    "@types/prompts": ^2.0.12
+    "@typescript-eslint/eslint-plugin": latest
+    "@typescript-eslint/parser": latest
+    chalk: ^4.1.1
+    cross-spawn: ^7.0.3
+    dotenv: ^10.0.0
+    eslint: ^7.28.0
+    husky: ">=6"
+    lint-staged: ">=10"
+    prettier: ^2.3.1
+    prompts: ^2.4.1
+    rimraf: ^3.0.2
+    semantic-release: ^17.4.3
+    typescript: ^4.3.2
+  bin:
+    env2ts: dist/index.js
+  languageName: unknown
+  linkType: soft
+
 "err-code@npm:^2.0.2":
   version: 2.0.3
   resolution: "err-code@npm:2.0.3"
@@ -5210,31 +5235,6 @@ __metadata:
   checksum: c590b9e8c1d91ac1b57b65f8ed7cc7837e702d86f47c725462cc7e03f3850dfa92a32f956d350632208aa78e9be03917a21d9ef5d139c30be13bb51bf576209f
   languageName: node
   linkType: hard
-
-"ts-env@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "ts-env@workspace:."
-  dependencies:
-    "@types/cross-spawn": ^6.0.2
-    "@types/node": ^15.12.1
-    "@types/prompts": ^2.0.12
-    "@typescript-eslint/eslint-plugin": latest
-    "@typescript-eslint/parser": latest
-    chalk: ^4.1.1
-    cross-spawn: ^7.0.3
-    dotenv: ^10.0.0
-    eslint: ^7.28.0
-    husky: ">=6"
-    lint-staged: ">=10"
-    prettier: ^2.3.1
-    prompts: ^2.4.1
-    rimraf: ^3.0.2
-    semantic-release: ^17.4.3
-    typescript: ^4.3.2
-  bin:
-    ts-env: dist/index.js
-  languageName: unknown
-  linkType: soft
 
 "tslib@npm:^1.8.1, tslib@npm:^1.9.0":
   version: 1.14.1

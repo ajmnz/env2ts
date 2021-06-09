@@ -1,1 +1,1 @@
-# ts-env
+# env2ts
