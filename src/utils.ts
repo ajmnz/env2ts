@@ -1,12 +1,34 @@
 import chalk from "chalk";
 import spawn from "cross-spawn";
+import fs from "fs";
+
+interface IPackageJSON {
+  devDependencies?: {
+    dotenv?: string;
+  };
+  dependencies?: {
+    dotenv?: string;
+  };
+}
 
 export const isDotenvInstalled = () => {
   let installed = false;
 
   try {
-    const dotenv = require("dotenv");
-    installed = true;
+    const packageJson: IPackageJSON = JSON.parse(
+      fs.readFileSync("./package.json").toString()
+    );
+
+    if (!packageJson) {
+      throw new Error("");
+    }
+
+    if (
+      packageJson.devDependencies?.dotenv ||
+      packageJson.dependencies?.dotenv
+    ) {
+      installed = true;
+    }
   } catch {}
 
   return installed;

@@ -29,10 +29,14 @@ import prompts from "prompts";
     const dotenvInstall = await prompts({
       type: "select",
       name: "manager",
-      message: `Module ${chalk.cyan(
+      message: `Looks like ${chalk.cyan(
         "dotenv"
-      )} is not installed, choose your package manager`,
+      )} is not installed, choose your package manager or skip install`,
       choices: [
+        {
+          title: "Do not install",
+          value: "none",
+        },
         {
           title: "npm",
           value: "npm",
@@ -40,10 +44,6 @@ import prompts from "prompts";
         {
           title: "yarn",
           value: "yarn",
-        },
-        {
-          title: "Do not install",
-          value: "none",
         },
       ],
     });
