@@ -17,11 +17,12 @@ This will look for an `.env` file in your current directory and will write to `c
 
 ## Options
 
-| arg                     | required | description                              | default       |
-| ----------------------- | -------- | ---------------------------------------- | ------------- |
-| `--in path/to/.env`     | no       | Specify an `.env` file                   | `./.env`      |
-| `--out path/to/file.ts` | no       | Specify the output file                  | `./config.ts` |
-| `--raw`                 | no       | Print the output directly to the console | `false`       |
+| arg                     | required | description                                                                                     | default       |
+| ----------------------- | -------- | ----------------------------------------------------------------------------------------------- | ------------- |
+| `--in path/to/.env`     | no       | Specify an `.env` file                                                                          | `./.env`      |
+| `--out path/to/file.ts` | no       | Specify the output file                                                                         | `./config.ts` |
+| `--watch`               | no       | Watch the input file for changes and write the env variables automatically into the output file | `no`          |
+| `--raw`                 | no       | Print the output directly to the console                                                        | `no`          |
 
 ## Example
 
@@ -94,6 +95,7 @@ $ npx env2ts
 
 This package is still in development. Here's a rough todo of what's left:
 
+- [x] Add `--watch` mode
 - [ ] Add `--js` flag to allow non-TypeScript users to use it
 - [ ] Add `--require` flag to choose between `require('dotenv').config()` and ES6 Modules
 - [ ] Parse env variables to get the appropriate type (now we're using string for everything)

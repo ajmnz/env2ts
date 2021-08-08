@@ -1,6 +1,7 @@
 import chalk from "chalk";
 import spawn from "cross-spawn";
 import fs from "fs";
+import logUpdate from "log-update";
 
 interface IPackageJSON {
   devDependencies?: {
@@ -94,7 +95,7 @@ export const parseEnvFile = (contents: string): string[] => {
   // Remove blank lines
   rawContent = rawContent.replace(/(^[ \t]*\n)/gm, "");
 
-  console.log(`${chalk.blue("➤")} Collecting env variables`);
+  logUpdate(`${chalk.blue("➤")} Collecting env variables`);
 
   // Get an array of the vars without the value and trim whitespace
   const varArr = rawContent.match(/^([^=])+/gm)?.map((v) => v.trim());
