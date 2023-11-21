@@ -42,9 +42,9 @@
     "*.{js,css,md}": "prettier --write"
   },
   "devDependencies": {
-    "@types/cross-spawn": "6.0.2",
-    "@types/node": "15.12.1",
-    "@types/prompts": "2.4.0",
+    "@types/cross-spawn": "6.0.6",
+    "@types/node": "15.14.9",
+    "@types/prompts": "2.4.9",
     "@typescript-eslint/eslint-plugin": "latest",
     "@typescript-eslint/parser": "latest",
     "eslint": "7.32.0",
