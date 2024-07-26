@@ -58,7 +58,7 @@
     "chalk": "4.1.2",
     "chokidar": "3.5.2",
     "cross-spawn": "7.0.3",
-    "log-update": "4.0.0",
+    "log-update": "6.1.0",
     "prompts": "2.4.1"
   }
 }
