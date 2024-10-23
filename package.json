@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@types/cross-spawn": "6.0.2",
-    "@types/node": "15.12.1",
+    "@types/node": "20.17.0",
     "@types/prompts": "2.4.0",
     "@typescript-eslint/eslint-plugin": "latest",
     "@typescript-eslint/parser": "latest",
